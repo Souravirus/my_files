@@ -1,0 +1,17 @@
+#!/bin/bash
+cur_dir=`pwd`
+path=$cur_dir/$1
+echo "#include<bits/stdc++.h>" >>$path 
+echo "#define mp make_pair" >>$path
+echo "#define lli long long int">>$path
+echo "#define ulli unsigned long long int">>$path
+echo "#define dout if(debug)cout<<\" \"">>$path
+echo "#define mod 1000000007">>$path
+echo "using namespace std;" >>$path 
+echo  -e "\n">>$path
+echo "int main(){">>$path
+echo -e "\tios_base::sync_with_stdio(false);">>$path
+echo -e "\tcin.tie(NULL);">>$path
+echo -e "\treturn 0;">>$path
+echo "}">>$path
+vim $1
